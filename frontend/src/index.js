@@ -38,7 +38,7 @@ DOM.injectCSS("BetterDiscordWebStyles", `.CodeMirror {height: 100% !important;}`
 // const getConfig = key => new Promise(resolve => chrome.storage.sync.get(key, resolve));
 
 ipcRenderer.send(IPCEvents.MAKE_REQUESTS, {
-    url: ENV === "development" ? "http://127.0.0.1:5500/betterdiscord.js" : "https://strencher.github.io/BdBrowser/dist/betterdiscord.js"
+    url: ENV === "development" ? "http://127.0.0.1:5500/betterdiscord.js" : "https://JamesTheReal.github.io/BdBrowserUpdated/dist/betterdiscord.js"
 }, async bd => {
     const Dispatcher = Webpack.findByProps("dirtyDispatch");
 
